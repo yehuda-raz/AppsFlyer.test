@@ -1,0 +1,360 @@
+.site-main {
+  font-size: 16px;
+}
+/*--------------------------------------------------------------
+# section 1 
+--------------------------------------------------------------*/
+
+#section1 .title {
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: -0.5px;
+  word-spacing: -1px;
+  line-height: 40px;
+}
+#section1 .pannel-div {
+  margin-bottom: 15px;
+}
+
+#section1 {
+  color: #5e5e5e;
+}
+
+#section1 .sub_title {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+}
+#section1 .whay ul li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+#section1 .form-div {
+  width: 100%;
+}
+
+#section1 .whay ul li:before {
+  content: "";
+  background: url(../../img/selected.svg) no-repeat;
+
+  display: inline-block;
+  background-size: 13px 13px;
+  width: 13px;
+  height: 13px;
+  padding-right: 15px;
+}
+
+#main .logolist ul {
+  /* display: flex;
+  width: 100%;
+  flex-wrap: wrap; */
+
+  padding-top: 25px;
+  margin: 0;
+  margin-bottom: -15px;
+  max-width: 530px;
+
+  /* align-items: center; */
+}
+
+#main .logolist ul > * {
+  display: inline-block;
+  padding-bottom: 15px;
+}
+#main .logolist ul > *:first-child {
+  padding-left: 0px;
+}
+
+#main .logolist ul li img {
+  max-width: 100%;
+  padding-left: 10px;
+}
+#main .logolist ul li:first-child img {
+  padding-left: 0px;
+}
+#section1 .container .content {
+  flex-direction: column;
+}
+#section1 .appsFlyersUniversa {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0;
+  margin-top: 25px;
+}
+
+/*--------------------------------------------------------------
+# section 2
+--------------------------------------------------------------*/
+
+#section2 {
+  background-color: #3db0f5;
+  color: #ffffff;
+}
+
+#section2 .container h3 {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 600;
+  font-style: normal;
+  margin: 0;
+  padding: 25px 0;
+}
+
+#section2 .whay ul {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  /* align-items: flex-end; */
+  text-align: center;
+  flex-direction: column;
+  padding: 25px 0 5px;
+  margin: 0;
+}
+
+#section2 .whay ul li {
+  margin-bottom: 50px;
+}
+#section2 .whay ul li:last-child {
+  margin-bottom: 0px;
+}
+
+#section2 div.whayto > *:first-child {
+  padding-left: 0;
+}
+#section2 div.whayto > *:last-child {
+  border-right: 0;
+  padding-right: 0;
+}
+
+#section2 .big_text {
+  font-size: 52px;
+  font-weight: 500;
+}
+#section2 .small_text {
+  font-size: 12px;
+  margin: 15px 0;
+  margin-bottom: 15px;
+}
+
+/*--------------------------------------------------------------
+# section 3 
+--------------------------------------------------------------*/
+section .content {
+  margin: 25px auto;
+}
+
+#section3 .container .content {
+  max-width: 1050px;
+}
+
+#section3 .container .sign:before {
+  content: url("../../img/double_quotes.png");
+  display: block;
+  width: 92px;
+  height: 80px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+#section3 .container .sign:after {
+  content: url("../../img/double_quotes.png");
+  display: block;
+  width: 92px;
+  height: 80px;
+  -moz-transform: scale(-1, -1);
+  -webkit-transform: scale(-1, -1);
+  -o-transform: scale(-1, -1);
+  -ms-transform: scale(-1, -1);
+  transform: scale(-1, -1);
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+#section3 .container h3 {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: italic;
+  color: #607991;
+  line-height: 1.5;
+  text-align: center;
+  padding: 20px 15px;
+  margin: 0;
+  position: relative;
+}
+
+#section3 .container .cardbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#section3 .container .text_place {
+  text-align: center;
+}
+#section3 .container .text_place h6 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: #3db0f5;
+}
+
+#section3 .container .text_place p {
+  margin: 0;
+}
+
+#section3 .container .text_place img.company_image {
+  max-height: 30px;
+}
+
+.person img {
+  max-width: 80px;
+}
+
+.container {
+}
+@media (max-width: 992px) {
+  #main .logolist ul {
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  #main .logolist ul > * {
+    flex-basis: 25%;
+  }
+}
+@media (max-width: 576px) {
+  .desktop-ver {
+    display: none;
+  }
+
+  #main .whay ul li {
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 10px;
+  }
+  #demo-user-form h2 {
+    margin-top: 0;
+  }
+}
+@media (max-width: 768px) {
+}
+@media (max-width: 992px) {
+  #section1 .container .content {
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 576px) {
+  .mobile-ver {
+    display: none;
+  }
+  section .content {
+    margin: 35px auto;
+  }
+  #section1 .whay ul li:before {
+    background-size: 20px;
+    width: 20px;
+    height: 20px;
+  }
+
+  #main .logolist ul li img {
+    max-width: 120px;
+  }
+
+  #section2 .container h3 {
+    font-size: 30px;
+  }
+  #section2 .big_text {
+    font-size: 80px;
+  }
+  #section2 .small_text {
+    font-size: 16px;
+  }
+  #section2 .whay ul {
+    flex-direction: row;
+    padding: 30px 0;
+  }
+
+  #section2 .whay ul > * {
+  }
+  #section2 .container h3 {
+    padding: 35px 0;
+  }
+
+  #section2 .whay ul > * {
+    flex-basis: 50%;
+  }
+
+  #section2 .whay ul li {
+    margin-bottom: 0px;
+  }
+
+  #section3 .container h3 {
+    font-size: 20px;
+  }
+  #section3 .container h3 {
+    padding: 35px;
+  }
+  #section3 .container .cardbox {
+    padding-right: 60px;
+  }
+}
+@media (min-width: 768px) {
+  #section3 .container .cardbox {
+    flex-direction: row;
+  }
+
+  #section3 .container .text_place {
+    text-align: left;
+    margin-left: 15px;
+  }
+  #section1 .title {
+    font-size: 36px;
+    line-height: normal;
+  }
+}
+
+@media (min-width: 992px) {
+  #section2 .whay ul > * {
+    flex-basis: 25%;
+  }
+  #section1 .form-div {
+    width: 530px;
+    min-width: 530px;
+  }
+
+  #section1 .container .content {
+    margin-bottom: -65px;
+    flex-direction: row;
+  }
+  #section2 .whay ul li {
+    transition: all 0.2s ease-in-out;
+  }
+  #section2 .whay ul li:hover {
+    transform: scale(1.1);
+    box-shadow: -2px -2px 11px 0px #1966b0;
+  }
+  .pannel-div {
+    margin-right: 2%;
+    margin-top: 25px;
+    padding-bottom: 65px;
+  }
+}
+@media (min-width: 1200px) {
+  .pannel-div {
+    margin-right: 5%;
+  }
+  #main .logolist ul > * {
+    padding-left: 15px;
+  }
+  #section1 .appsFlyersUniversa {
+    margin-top: 35px;
+  }
+}
