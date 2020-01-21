@@ -28,7 +28,8 @@ function appsflyertest_scripts() {
 			wp_enqueue_script( 'lp-js-01', APT_ROOT_URL . '/page-templates/js/lp_01.js', array('jquery'), filemtime( APT_ROOT_PATH . '/page-templates/js/lp_01.js'), true );
 	}
 
-	
+	wp_enqueue_style( '_themename-stylesheet', APT_ROOT_URL . '/dist/css/bundle.css', array(), '1.0.0', 'all' );
+	wp_enqueue_script( '_themename-scripts', APT_ROOT_URL . '/dist/js/bundle.js', array(), '1.0.0', true );
 
 
 
@@ -37,10 +38,7 @@ add_action( 'wp_enqueue_scripts', 'appsflyertest_scripts' );
 
 
 
-function _themename_assets() {
-	wp_enqueue_style( '_themename-stylesheet', get_template_directory_uri() . '/dist/css/bundle.css', array(), '1.0.0', 'all' );
-}
-  add_action('wp_enqueue_scripts', '_themename_assets');	
+
 
 
 
