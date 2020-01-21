@@ -1,0 +1,11 @@
+@import "./components/lp01.scss";
+
+$bg_color: linear-gradient(
+  to bottom,
+  rgba(255, 255, 255, 1) 0%,
+  rgba(207, 222, 241, 1) 100%
+);
+
+body {
+  background: $bg_color;
+}
