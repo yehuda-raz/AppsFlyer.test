@@ -40,7 +40,7 @@ if ( ! defined( 'APT_AFC' ) ) {
  * Hide editor for specific page templates.
  *
  */
-// add_action( 'admin_init', 'hide_editor' );
+add_action( 'admin_init', 'hide_editor' );
  
 // function hide_editor() {
 // 	// Get the Post ID.
@@ -70,15 +70,19 @@ require get_template_directory() . '/inc/theme-widgets.php';
  */
 require get_template_directory() . '/inc/menus.php';
 
-/**
- * Enqueue menus function
- */
-require get_template_directory() . '/inc/menus-function.php';
 
 /**
  * Enqueue scripts and styles.
  */
-require get_template_directory() . '/inc/theme-scripts.php';
+
+function appsflyertest_scripts() {
+	// wp_enqueue_style( 'appsflyertest-style', get_stylesheet_uri() );
+	wp_enqueue_style( '_themename-stylesheet', APT_ROOT_URL . '/dist/css/bundle.css', array(), '1.0.0', 'all' );
+	wp_enqueue_script( '_themename-scripts', APT_ROOT_URL . '/dist/js/bundle.js', array('jquery'), '1.0.0', true );
+	wp_localize_script( '_themename-scripts', 'wp_global', array( 'ajax_url' => admin_url('admin-ajax.php')) );
+}
+add_action( 'wp_enqueue_scripts', 'appsflyertest_scripts' );
+
 
 
 /**
@@ -103,3 +107,6 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+
+// Add demo form backEnd
+require get_template_directory() . '/inc/demo-form/init.php';

@@ -25,22 +25,39 @@
 
 
 	<header id="masthead" class="site-header">
-		<div class="container">
-			<div class="site-branding">
-				<?php
-				the_custom_logo();
-				 ?>
-			</div><!-- .site-branding -->
 
-			<nav id="main-navigation" class="site-navigation navbar-nav">
-				<?php
-				wp_nav_menu( array(
-					'theme_location' => 'menu-1',
-					'menu_id'        => 'primary-menu',
-				) );
-				?>
-			</nav><!-- #site-navigation -->
-		</div><!--.container-->
+			<div class="nav-container">
+				<nav id="site-navigation" class="main-navigation" role="navigation">
+					<div class="container-lg nav-bar">
+						<div class="row align-items-center">
+							<div class="mr-auto ml-0 ">
+								<?php the_custom_logo(); ?>
+							</div>
+							<div class="ml-auto mr-0">								
+									<?php 	wp_nav_menu( array(
+										'theme_location' => 'menu-1',
+										'menu_id'        => 'primary-menu',
+										'menu_class'     => 'nav align-items-center',
+										'container'      => false,
+										'depth'          => 5,
+										
+			// 							'theme_location' => 'footer-menu-bottom',
+			// 'container'      => false,
+			// 'depth'          => 5,
+			// 'echo'           => false,
+			// 'fallback_cb'    => 'AppsFlyer_menu_fallback',
+			// 'menu_class'     => 'footer-menu-bottom nav nav-pills'
+
+
+
+										
+									) ); ?>
+							</div>
+						</div>
+					</div>
+				</nav><!-- #site-navigation -->
+			</div>
+
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">

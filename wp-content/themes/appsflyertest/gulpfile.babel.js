@@ -91,7 +91,7 @@ export const watchForChanges = () => {
     watch('src/images/**/*.{jpg,jpeg,png,svg,gif}', series(images, reload));
     watch(['src/**/*', '!src/{images,js,scss}', '!src/{images,js,scss}/**/*'], series(copy, reload));
     watch('src/js/**/*.js', series(scripts, reload));
-    // watch("**/*.php", reload);
+    watch("**/*.php", reload);
 }
 
 

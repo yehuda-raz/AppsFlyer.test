@@ -1,7 +1,12 @@
-@import "./components/lp01";
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,600,600i,700&display=swap");
 
-$bg_color: pink;
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins";
 
-body {
-  background: $bg_color;
-}
+@import "./variables";
+
+@import "node_modules/bootstrap/scss/bootstrap";
+
+@import "./components/main";

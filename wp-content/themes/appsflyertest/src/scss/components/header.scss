@@ -1,0 +1,32 @@
+header {
+  nav#site-navigation {
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: $white;
+  }
+
+  .nav-bar {
+    .row {
+      min-height: $_aft-header-height;
+      margin: 0;
+    }
+  }
+  ul,
+  ul li a {
+    color: $_aft-menu-color;
+    transition: 0.3s;
+  }
+  ul.nav span.preText,
+  .nav-link {
+    padding: $_aft-header-btns-padding-y $_aft-header-btns-padding-x;
+  }
+}
+
+.customerLogin a {
+  color: $_aft-main-blue;
+  border-radius: 18px;
+  border: solid 1px $_aft-main-blue;
+  &:hover {
+    color: $white;
+    background: $_aft-main-blue;
+  }
+}

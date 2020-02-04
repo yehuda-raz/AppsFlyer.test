@@ -459,8 +459,8 @@ figure {
 --------------------------------------------------------------*/
 
 header#masthead {
-  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
-  background-color: #fff;
+  /* box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: #fff; */
   height: 80px;
   display: flex;
 }

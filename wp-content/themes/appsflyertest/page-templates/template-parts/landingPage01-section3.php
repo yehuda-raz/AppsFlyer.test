@@ -8,35 +8,33 @@
  */
 
 ?>
-
-	<section id="section3" class="flex-center lp1">
-
-		<div class="container ">
-			
-				<div class="content">
-
-					<div class="">
-						<h3 class="ourSource sign">
-							<div >
-								<?php echo  get_field('our_source') ?>
-							</div>
-						</h3>
-						<figure class="cardbox">
+ <!-- pt-md-3 pb-md-4 pt-lg-4 pb-lg-5 -->
+<section id="section3" class="py-3 pt-md-3 pb-md-4 pt-lg-4 pb-lg-5">
+	<div class="container-lg ">
+				<div class="row">
+					<div class="col">
+						<div class="position-relative"> 
+							<h3 class="text-center my-3 mb-sm-0"><?php echo  get_field('our_source') ?></h3>
+						</div>
 						
-							<div class="person">
-								<img src="<?php echo get_field('person_image') ?>" />
-							</div>	
+						<!-- py-md-2 -->
+						<div class="row">
+							<div class="col-lg-10 mx-auto text-center">
+										<figure class="row align-items-center justify-content-center flex-column flex-sm-row flex-nowrap py-sm-4 card-box">
 
-							<figcaption class="text_place">
-								<h6><?php echo  get_field('card_box_name') ?></h6>
-								<p><?php echo  get_field('card_box_role') ?></p>
-								<img class="company_image" src="<?php echo get_field('card_box_company_image') ?>" />		
-							</figcaption>
-						</figure>
-					</div>	
-	
-			</div><!-- .content -->
+											<div class="pb-1 pb-sm-0">
+												<img class="avatar" src="<?php echo get_field('person_image') ?>" />
+											</div>	
+											<figcaption class="text-sm-left pl-sm-3">
+												<h6><?php echo  get_field('card_box_name') ?></h6>
+												<p><?php echo  get_field('card_box_role') ?></p>
+												<img class="brand-image" src="<?php echo get_field('card_box_company_image') ?>" />		
+											</figcaption>
 
-		</div><!-- .container -->
-		
-	</section>
+									</figure>
+							</div>
+						</div>	
+				</div>	
+			</div><!-- .row -->
+	</div><!-- .container -->		
+</section>
