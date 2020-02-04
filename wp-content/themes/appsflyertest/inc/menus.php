@@ -59,7 +59,7 @@ if ( ! function_exists( 'AppsFlyer_header_menu_lp01' ) ) {
 			'depth'          => 5,
 			'echo'           => false,
 			'fallback_cb'    => 'AppsFlyer_menu_fallback',
-			'menu_class'     => 'nav navbar-nav header-menu-lp1'
+			'menu_class'     => 'nav align-items-center header-menu-lp1'
 		);
 
 		$menu = wp_nav_menu( $defaults );
@@ -79,7 +79,7 @@ if ( ! function_exists( 'AppsFlyer_Footer_menu_bottom' ) ) {
 			'depth'          => 5,
 			'echo'           => false,
 			'fallback_cb'    => 'AppsFlyer_menu_fallback',
-			'menu_class'     => 'footer-menu-bottom nav nav-pills'
+			'menu_class'     => 'footer-menu-bottom  align-items-center flex-column flex-md-row nav nav-pills'
 		);
 
 		$menu = wp_nav_menu( $defaults );

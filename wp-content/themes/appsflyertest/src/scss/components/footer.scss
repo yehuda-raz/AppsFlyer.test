@@ -1,0 +1,18 @@
+footer {
+  background: $_aft_footer_bg;
+  min-height: $_aft-size-base * 3.5;
+
+  .site-footer-bottom {
+    font-size: $_aft-s-size;
+  }
+  .site-footer-bottom {
+    color: $aft_footer_text;
+  }
+  .nav-link {
+    padding: 0.31rem;
+    color: lighten($aft_footer_text, 10%);
+    &:hover {
+      color: lighten($aft_footer_text, 20%);
+    }
+  }
+}

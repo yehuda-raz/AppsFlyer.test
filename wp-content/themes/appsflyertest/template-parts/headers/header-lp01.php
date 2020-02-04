@@ -26,21 +26,24 @@
 <div id="page" class="site">
 	
 	<header id="masthead" class="site-header">
-		<div class="container">
-			<div class="site-branding">
-				<?php
-				the_custom_logo();
+		
+			<div class="nav-container">
+				<nav id="site-navigation" class="main-navigation" role="navigation">
+					<div class="container-lg nav-bar">
+						<div class="row align-items-center">
+							<div class="mr-auto ml-0 ">
+								<?php the_custom_logo(); ?>
+							</div>
+							<div class="ml-auto mr-0">								
+								<?php echo AppsFlyer_header_menu_lp01()  ?>
+							</div>
+						</div>
+					</div>
+				</nav><!-- #site-navigation -->
+			</div>
+		
 
-
-
-								 ?>
-			</div><!-- .site-branding -->
-			<nav  class="site-navigation">
-				<?php
-				echo AppsFlyer_header_menu_lp01() 
-				?>
-			</nav><!-- #site-navigation -->
-		</div><!--.container-->
+	
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">

@@ -1,0 +1,40 @@
+// this changes the bootstrap
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1200px
+);
+
+$body-color: #404040; //From bootstrap > this changes the bootstrap
+
+$headings-line-height: 1.5;
+$font-family-base: "Montserrat", sans-serif; //this changes the bootstrap
+
+// Sizes
+$_aft-size-base: 0.625rem; //10
+
+$_aft-s-size: $_aft-size-base * 1.2; // 12px
+$_aft-m-size: $_aft-size-base * 1.4;
+
+// Main Colors
+$_aft-main-blue: #3db0f5;
+$_aft-menu-color: #8d8c8e;
+
+//Header
+$_aft-header-height: 5rem;
+$_aft-header-btns-padding-y: 0.31rem;
+$_aft-header-btns-padding-x: 1rem;
+
+//form
+$_aft-btn-color-bg: #9acc2e;
+$_aft-btn-color-text: #fff;
+
+//lp01.
+$_aft-section1-color-text: #5e5e5e;
+$_aft-section2-color-text: $white;
+$_aft-section3-color-text: #607991;
+
+// Footer
+$_aft_footer_bg: #272e34;
+$aft_footer_text: #7e7e7e;
